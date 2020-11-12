@@ -26,5 +26,5 @@ jobs:
         with:
          azcliversion: 2.0.72
           inlineScript: |
-            az deployment group create --resource-group ${{github.event.inputs.parameter1}} --template-file./Hands-on-Lab/templates/deploy-vm-as-domain-member.json --parameter-file deploy-vm-as-domain-member.parameters
+            az deployment group create --resource-group ${{github.event.inputs.parameter1}} --template-file ./Hands-on-Lab/templates/deploy-vm-as-domain-member.json --parameter-file ./Hands-on-Lab/templates/deploy-vm-as-domain-member.parameters
           
